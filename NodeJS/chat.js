@@ -4,10 +4,10 @@ var event = new (require('events').EventEmitter)
   ; 
 
 /*
- * 1. ¸ÞÀÎ Ã¤ÆÃ¹æÀ» ±âº»À¸·Î Á¢¼Ó
- * 2. ¹æ±â´ÉÀ» ¸¸µé¸é ¿©·¯°³·Î Áõ¼³ÇÏ¸é ¸¸µé¼öÀÖ°Ô ÇØ¾ßÇÔ.
- * 3. ±¤°íÀÇ °æ¿ì DB ¿¡¼­ °¡Á®¿Í »Ñ¸®´Â°É·Î
- * 4. ¸ðµç¸Þ¼¼Áö¸¦ DB ¿¡ ±â·Ï
+ * 1. ë©”ì¸ ì±„íŒ…ë°©ì„ ê¸°ë³¸ìœ¼ë¡œ ì ‘ì†
+ * 2. ë°©ê¸°ëŠ¥ì„ ë§Œë“¤ë©´ ì—¬ëŸ¬ê°œë¡œ ì¦ì„¤í•˜ë©´ ë§Œë“¤ìˆ˜ìžˆê²Œ í•´ì•¼í•¨.
+ * 3. ê´‘ê³ ì˜ ê²½ìš° DB ì—ì„œ ê°€ì ¸ì™€ ë¿Œë¦¬ëŠ”ê±¸ë¡œ
+ * 4. ëª¨ë“ ë©”ì„¸ì§€ë¥¼ DB ì— ê¸°ë¡
  */
 
 socketIO.sockets.on('connection', function (socket) {
