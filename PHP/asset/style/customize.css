@@ -1,0 +1,227 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,500italic,700,900,400italic,700italic);
+
+html {
+    font-size: 12px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body {
+    background: #fff;
+    /*font-family: 'Roboto','sans-serif';*/
+    font-family:'Nanum Barun Gothic','Nanum Gothic','Malgun Gothic','맑은고딕','맑은 고딕',"Apple SD Gothic Neo",AppleGothic,Dotum,Gulim,Optima,Segoe,"Segoe UI",Candara,Calibri,Helvetica,AppleSDGothic,Arial,Tahoma,sans-serif,'Gulim';
+    font-weight: normal;
+    line-height: 20px;
+    color: #444;
+}
+
+::-moz-selection {
+    background: #3399ff;
+    color: #ffffff;
+    text-shadow: none;
+}
+::selection {
+    background: #3399ff;
+    color: #ffffff;
+    text-shadow: none;
+} 
+
+abbr[title],
+dfn[title] {
+    cursor: help;
+}
+dfn[title] {
+    border-bottom: 1px dotted;
+    font-style: normal;
+}
+p,
+hr,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+address,
+fieldset,
+figure {
+    margin: 0 0 10px 0;
+}
+* + p,
+* + hr,
+* + ul,
+* + ol,
+* + dl,
+* + blockquote,
+* + pre,
+* + address,
+* + fieldset,
+* + figure {
+    margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px 0; 
+    color: #444444;
+    text-transform: none;
+}
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+    margin-top: 25px;
+}
+h1 { font-size: 36px; line-height: 42px; }
+h2 { font-size: 24px; line-height: 30px; }
+h3 { font-size: 18px; line-height: 24px; }
+h4 { font-size: 16px; line-height: 22px; }
+h5 { font-size: 14px; line-height: 20px; }
+h6 { font-size: 12px; line-height: 18px; }
+
+a {
+    color: #0077dd;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: #005599;
+    text-decoration: underline;
+}
+
+em {
+    font-style: normal;
+}
+
+img {
+    /* Corrects max-width behavior (2.) if padding and border are used */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Responsiveness Sets a maximum width relative to the parent and auto scales the height */
+    max-width: 100%;
+    height: auto;
+
+    /* Remove the gap between images and the bottom of their containers */
+    vertical-align: middle;
+}
+
+
+hr {
+    display: block;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid #dddddd;
+}
+
+address {
+    font-style: normal;
+}
+
+button,
+input/*:not([type="radio"]):not([type="checkbox"])*/,
+select {
+    vertical-align: middle;
+}
+
+iframe {
+    border: 0;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+ul > li > ul,
+ul > li > ol,
+ol > li > ol,
+ol > li > ul {
+    margin: 0;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-left: 0;
+}
+hr {
+    display: block;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid #dddddd;
+}
+address {
+    font-style: normal;
+}
+q,
+blockquote {
+    font-style: italic;
+}
+blockquote {
+    padding-left: 15px;
+    border-left: 5px solid #dddddd;
+    font-size: 16px;
+    line-height: 22px;
+}
+blockquote small {
+    display: block;
+    color: #999999;
+    font-style: normal;
+}
+blockquote p:last-of-type {
+    margin-bottom: 5px;
+}
+code {
+    color: #dd0055;
+    font-size: 12px;
+    white-space: nowrap;
+    padding: 0 4px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    background: #fafafa;
+}
+pre code {
+    color: inherit;
+    white-space: pre-wrap;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+pre {
+    padding: 10px;
+    background: #fafafa;
+    color: #444444;
+    font-size: 12px;
+    line-height: 18px;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+/* 테이블 */
+table {
+    width:auto;
+    margin-bottom: 15px;
+}
+* + table {
+    margin-top: 15px;
+}
+table td, 
+table th {
+    padding: 6px 4px;
+}
+table td {
+    vertical-align: top;
+}
+
+:-ms-input-placeholder{color:#999!important}
+::-moz-placeholder{color:#999}
+::-webkit-input-placeholder{color:#999}
+
+:disabled:-ms-input-placeholder{color:#999!important} 
+:disabled::-moz-placeholder{color:#999} 
+:disabled::-webkit-input-placeholder{color:#999}

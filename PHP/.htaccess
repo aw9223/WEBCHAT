@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+# 마지막에 항상 슬래시(/) 를 붙임 (존재하는파일은 예외)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_URI} !(.*)/$
+#RewriteRule ^(.*)?$ $1/ [R=301,NE,L]
+
+# this gets rid of index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index\.php/$1 [L,NE]
