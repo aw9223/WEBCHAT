@@ -33,9 +33,7 @@
                 background-color: #e9ecef; 
                 padding: 45px 0 80px;
                 height: 100%;
-                box-sizing: border-box;
-                right: 0;
-                transition: right 0.4s ease;
+                box-sizing: border-box; 
             }
             
             #recvChat {
@@ -167,7 +165,7 @@
         <script type="text/javascript">
             $(function () {
                  
-                var socket = io.connect('http://219.254.106.46:2313/?r=default');
+                var socket = io.connect(':2313/?r=default');
 
                 socket.on('usermessage', function (data) {    
 
@@ -243,13 +241,21 @@
                 margin: 0;  
             }
             
+            #navDrawerState {
+                display: none;
+            }
+
+            #navDrawerState ~ #chatWrap { 
+                margin-right: 240px;
+            } 
+            
             #navDrawerButton {
                 position: absolute;
                 top: 0;
                 left: -25px;
                 margin-top: 5px;
                 margin-left: -10px;
-                display: block;
+                display: none;
                 cursor: pointer;
                 width: 25px;
                 height: 35px; 
@@ -273,10 +279,6 @@
             #navDrawerButton span:nth-child(1) { top: 25% }
             #navDrawerButton span:nth-child(2) { top: 50% }
             #navDrawerButton span:nth-child(3) { top: 75% }
-            
-            #navDrawerState {
-                display: none;
-            }
              
             #navDrawerState:checked ~ #chatWrap #navDrawerButton span {
                 top: 50%; 
@@ -302,7 +304,7 @@
             }
  
             #navDrawer{ 
-                position: fixed;
+                position: absolute;
                 top: 0;
                 right: -240px;
                 width: 240px;
@@ -314,20 +316,25 @@
                 transition: right 0.4s ease; 
             }
             
-
-            
-            #navDrawerState:checked ~ #chatWrap #navDrawerBackground {
+            @media handheld, only screen and (max-width: 768px) {
+                
+            #navDrawerState ~ #chatWrap { 
+                margin-right: 0;
+            }
+ 
+            #navDrawerButton {
                 display: block;
             }
             
-            #navDrawerState:checked ~ #chatWrap {
-                right: 240px;
+            #navDrawerState:checked ~ #chatWrap #navDrawerBackground {
+                display: block;
             }
             
             #navDrawerState:checked ~ #chatWrap #navDrawer {
                 right: 0;
             }
             
+            }
 
         </style>
     </head>
@@ -352,12 +359,15 @@
             
             <div id="navDrawerBackground"></div>
             <div id="navDrawer">
-                
                 <label for="navDrawerState" id="navDrawerButton">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
+                
+                <div>
+                    내용
+                </div>
             </div>
         </div> 
     </body>
